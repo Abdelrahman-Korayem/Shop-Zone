@@ -43,14 +43,14 @@ function App() {
 
         <Routes>
         
-          <Route path="/" element={<Navigate to={isAuth ? "/home" : "/login"} />} />
+          <Route path="/" element={<Navigate to={isAuth ? "/" : "/login"} />} />
 
          
           <Route path="/register" element={<Register setIsAuth={setIsAuth} />} />
           <Route path="/login" element={<Login setIsAuth={setIsAuth} />} />
 
    
-          <Route path="/home" element={<PrivateRoute><Home /></PrivateRoute>} />
+          <Route path="/" element={<PrivateRoute><Home /></PrivateRoute>} />
           <Route path="/about" element={<PrivateRoute><About /></PrivateRoute>} />
           <Route path="/products" element={<PrivateRoute><Products /></PrivateRoute>} />
           <Route path="/productDetails/:id" element={<PrivateRoute><ProductDetails /></PrivateRoute>} />
