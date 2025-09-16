@@ -179,7 +179,7 @@ function NavBar() {
         
         {isOpen && (
           <div className="md:hidden mt-2 bg-white shadow rounded-lg p-4 space-y-2">
-            <NavLink to="/home" className="block text-gray-700 hover:text-[#689B8A]">
+            <NavLink to="/" className="block text-gray-700 hover:text-[#689B8A]">
               Home
             </NavLink>
             <NavLink to="/about" className="block text-gray-700 hover:text-[#689B8A]">
