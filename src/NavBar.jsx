@@ -24,7 +24,7 @@ function NavBar() {
           <div className="flex items-center gap-2">
             <Link
               className="flex items-center gap-2 text-[#689B8A] font-bold text-xl"
-              to="/"
+              to="/home"
             >
               ShopZone
             </Link>
@@ -36,7 +36,7 @@ function NavBar() {
               <ul className="flex items-center gap-6 text-sm font-medium">
                 <li>
                   <NavLink
-                    to="/"
+                    to="/home"
                     className={({ isActive }) =>
                       isActive
                         ? "text-[#689B8A]"
@@ -179,7 +179,7 @@ function NavBar() {
         
         {isOpen && (
           <div className="md:hidden mt-2 bg-white shadow rounded-lg p-4 space-y-2">
-            <NavLink to="/" className="block text-gray-700 hover:text-[#689B8A]">
+            <NavLink to="/home" className="block text-gray-700 hover:text-[#689B8A]">
               Home
             </NavLink>
             <NavLink to="/about" className="block text-gray-700 hover:text-[#689B8A]">
