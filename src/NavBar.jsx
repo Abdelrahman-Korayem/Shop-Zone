@@ -36,7 +36,7 @@ function NavBar() {
               <ul className="flex items-center gap-6 text-sm font-medium">
                 <li>
                   <NavLink
-                    to="/home"
+                    to="/"
                     className={({ isActive }) =>
                       isActive
                         ? "text-[#689B8A]"
